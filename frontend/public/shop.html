@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Jovian Wear</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" class="logo">Jovian Wear</a>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/shop" class="active">Shop</a></li>
+                    <li><a href="/collections">Collections</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/account">Account</a></li>
+                    <li><a href="/cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <div class="shop-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Search</h4>
+                        <input type="text" id="search" placeholder="Search products...">
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Collection</h4>
+                        <div id="collections-filter">
+                            <!-- Collections will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <input type="range" id="price-min" min="0" max="500">
+                        <input type="range" id="price-max" min="0" max="500">
+                        <span id="price-display">$0 - $500</span>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Sort</h4>
+                        <select id="sort">
+                            <option value="-createdAt">Newest</option>
+                            <option value="price">Price: Low to High</option>
+                            <option value="-price">Price: High to Low</option>
+                            <option value="title">Name: A to Z</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <section class="shop-content">
+                    <div class="products-grid" id="products">
+                        <!-- Products will be loaded here -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <!-- Pagination will be loaded here -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Premium knitwear for the modern individual.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jovian Wear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html>

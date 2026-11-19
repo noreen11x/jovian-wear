@@ -1,0 +1,15 @@
+{
+  "name": "jovianwear-standalone",
+  "version": "1.0.0",
+  "description": "Backend API for Jovian Wear standalone e-commerce platform",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "node --test"
+  },
+  "keywords": ["ecommerce", "api", "jovianwear"],
+  "author": "",
+  "license": "ISC"
+}
